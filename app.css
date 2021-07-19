@@ -22,9 +22,7 @@ body {
 
 .skills ul li:hover {
   background-color: rgb(226, 240, 255);
-  transform: scale(1.15);
   border-radius: 1rem;
-  border: 1px solid rgb(92, 154, 216);
 }
 
 .entry:hover {
@@ -40,11 +38,11 @@ body {
 
 .name {
   text-align: center;
-  margin-top: 30px;
-  background-color: rgb(226, 240, 255);
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(https://i.pinimg.com/736x/0f/f8/24/0ff824b6d8a94cba3a2c3f9c6f4771b0.jpg);
   transform: scale(1.05);
-  border-bottom: 1px solid rgb(92, 154, 216);
-  border-radius: 0 0 20px 20px;
 }
 
 .list-inline {
@@ -53,4 +51,8 @@ body {
 
 #mainNavbar {
   background-color: rgb(226, 240, 255);
+}
+
+img {
+  transform: scale(0.5);
 }
