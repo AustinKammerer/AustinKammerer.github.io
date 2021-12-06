@@ -59,7 +59,7 @@ export default function Header(props) {
 
             <Typography
               component="h2"
-              variant="h3"
+              variant="h2"
               align="center"
               sx={{ color: "rgb(139, 139, 139)" }}
             >

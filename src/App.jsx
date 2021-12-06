@@ -39,7 +39,7 @@ const theme = responsiveFontSizes(
           fontSize: "2.3rem",
         },
       },
-      h3: {
+      h2: {
         "@media (max-width:470px)": {
           fontSize: "1.3rem",
         },

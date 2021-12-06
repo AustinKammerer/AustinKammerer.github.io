@@ -61,12 +61,7 @@ export default function AboutMe(props) {
             spacing={3}
           >
             <Grid item>
-              <Typography
-                component="h2"
-                variant="h3"
-                align="center"
-                sx={{ color: "white" }}
-              >
+              <Typography component="h3" variant="h3" align="center">
                 {title}
               </Typography>
             </Grid>
@@ -75,7 +70,7 @@ export default function AboutMe(props) {
                 component="p"
                 variant="h5"
                 align="left"
-                sx={{ color: "rgb(139, 139, 139)" }}
+                sx={{ color: "text.secondary" }}
               >
                 {bio1}
               </Typography>
@@ -85,7 +80,7 @@ export default function AboutMe(props) {
                 component="p"
                 variant="h5"
                 align="left"
-                sx={{ color: "rgb(139, 139, 139)" }}
+                sx={{ color: "text.secondary" }}
               >
                 {bio2}
               </Typography>
@@ -93,7 +88,7 @@ export default function AboutMe(props) {
           </Grid>
         </Grid>
         <Box mt={3}>
-          <Stack direction="row" flexWrap="wrap">
+          <Stack direction="row" flexWrap="wrap" justifyContent="center">
             {technologies.map((tech) => (
               <Tech key={tech} label={tech} />
             ))}

@@ -1,4 +1,6 @@
 import headshot from "../assets/images/headshot2.jpg";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const headerData = {
   id: "header",
@@ -34,4 +36,15 @@ export const aboutData = {
     "Web APIs",
     "Git",
   ],
+};
+
+export const contactData = {
+  id: "contact",
+  title: "Hire Me",
+  subtitle: "Let's have a conversation",
+  gitHubUrl: "https://github.com/AustinKammerer",
+  gitHubIcon: GitHubIcon,
+  linkedInUrl: "https://www.linkedin.com/in/austin-kammerer/",
+  linkedInIcon: LinkedInIcon,
+  copyright: "Copyright © Austin Kammerer 2021",
 };
