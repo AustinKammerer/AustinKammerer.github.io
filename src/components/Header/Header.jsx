@@ -9,18 +9,14 @@ import mastheadImg from "../../assets/images/bg-masthead-2.jpg";
 const Masthead = styled(Container)(({ theme }) => ({
   position: "relative",
   width: "100%",
-  height: "100%",
   minHeight: "35rem",
-  padding: "15rem 0",
   backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(${mastheadImg})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundAttachment: "scroll",
   backgroundSize: "cover",
-  "@media (min-width: 992px)": {
-    height: "100vh",
-    padding: 0,
-  },
+  height: "100vh",
+  padding: 0,
 }));
 
 const MastheadH1 = styled(Typography)(({ theme }) => ({
@@ -30,8 +26,8 @@ const MastheadH1 = styled(Typography)(({ theme }) => ({
   letterSpacing: "0.8rem",
   background:
     "linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))",
-  "-webkit-text-fill-color": "transparent",
-  "-webkit-background-clip": "text",
+  WebkitTextFillColor: "transparent",
+  WebkitBackgroundClip: "text",
   backgroundClip: "text",
 }));
 

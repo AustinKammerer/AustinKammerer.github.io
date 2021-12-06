@@ -17,7 +17,9 @@ import Main from "./views/Main/Main";
 
 const theme = responsiveFontSizes(
   createTheme({
-    palette: {},
+    palette: {
+      mode: "dark",
+    },
     typography: {
       fontFamily: [
         "Nunito",

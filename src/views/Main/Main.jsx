@@ -1,5 +1,6 @@
 import Header from "../../components/Header/Header";
-import { headerData } from "../../components/Header/data";
+import AboutMe from "../../components/AboutMe/AboutMe";
+import { headerData, aboutData } from "../../data/data";
 
 import CssBaseline from "@mui/material/CssBaseline";
 
@@ -8,6 +9,7 @@ export default function Main() {
     <>
       {/* <CssBaseline /> */}
       <Header {...headerData} />
+      <AboutMe {...aboutData} />
     </>
   );
 }
