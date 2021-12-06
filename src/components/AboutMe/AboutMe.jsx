@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
-import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
 
 const AboutSection = styled("section")(({ theme }) => ({

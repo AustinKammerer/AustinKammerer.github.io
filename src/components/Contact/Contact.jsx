@@ -9,7 +9,7 @@ import contactImg from "../../assets/images/gray-mountains.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const Footer = styled("section")(({ theme }) => ({
+const ContactSection = styled("section")(({ theme }) => ({
   position: "relative",
   width: "100%",
   minHeight: "35rem",
@@ -37,14 +37,14 @@ export default function Contact(props) {
     title,
     subtitle,
     gitHubUrl,
-    gitHubIcon,
+    // gitHubIcon,
     linkedInUrl,
-    linkedInIcon,
+    // linkedInIcon,
     copyright,
   } = props;
 
   return (
-    <Footer>
+    <ContactSection id={id}>
       <Container fixed>
         <Grid
           container
@@ -96,6 +96,6 @@ export default function Contact(props) {
           <Copyright>{copyright}</Copyright>
         </Grid>
       </Container>
-    </Footer>
+    </ContactSection>
   );
 }
