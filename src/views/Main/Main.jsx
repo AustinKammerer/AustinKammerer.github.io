@@ -2,7 +2,12 @@ import Header from "../../components/Header/Header";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Contact from "../../components/Contact/Contact";
 import Portfolio from "../../components/Portfolio/Portfolio";
-import { headerData, aboutData, contactData } from "../../data/data";
+import {
+  headerData,
+  aboutData,
+  contactData,
+  portfolioData,
+} from "../../data/data";
 
 import {
   createTheme,
@@ -45,22 +50,13 @@ const darkTheme = responsiveFontSizes(
   })
 );
 
-const lightTheme = createTheme({
-  palette: {
-    mode: "light",
-  },
-});
-
 export default function Main() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Header {...headerData} />
       <AboutMe {...aboutData} />
-      <ThemeProvider theme={lightTheme}>
-        <Portfolio />
-      </ThemeProvider>
-
+      <Portfolio {...portfolioData} />
       <Contact {...contactData} />
     </ThemeProvider>
   );

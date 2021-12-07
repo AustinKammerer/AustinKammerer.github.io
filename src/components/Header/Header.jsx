@@ -32,7 +32,7 @@ const MastheadH1 = styled(Typography)(({ theme }) => ({
 }));
 
 export default function Header(props) {
-  const { id, title, subTitle, btnText, bgImage } = props;
+  const { id, title, subTitle, btnText } = props;
 
   return (
     <Masthead component="header" id={id} maxWidth={false}>
