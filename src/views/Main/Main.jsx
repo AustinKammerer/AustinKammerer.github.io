@@ -21,6 +21,9 @@ const darkTheme = responsiveFontSizes(
   createTheme({
     palette: {
       mode: "dark",
+      custom: {
+        main: "rgb(200,200,200)",
+      },
     },
     typography: {
       fontFamily: [

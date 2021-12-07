@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import mastheadImg from "../../assets/images/bg-masthead-2.jpg";
 
+import ResumeDownload from "../ResumeDownload/ResumeDownload";
+
 const Masthead = styled(Container)(({ theme }) => ({
   position: "relative",
   width: "100%",
@@ -32,41 +34,39 @@ const MastheadH1 = styled(Typography)(({ theme }) => ({
 }));
 
 export default function Header(props) {
-  const { id, title, subTitle, btnText } = props;
+  const { id, title, subTitle } = props;
 
   return (
     <Masthead component="header" id={id} maxWidth={false}>
       <Grid container height="100%" justifyContent="center" alignItems="center">
-        <Grid container item justifyContent="center" alignItems="center">
-          <Box>
-            <Grid container justifyContent="center" alignItems="center">
-              <Grid
-                item
-                sx={{
-                  "@media (min-width: 992px)": { marginRight: "2rem" },
-                }}
-              >
-                <MastheadH1 component="h1" variant="h1">
-                  {title.split(" ")[0]}
-                </MastheadH1>
-              </Grid>
-              <Grid item>
-                <MastheadH1 component="h1" variant="h1">
-                  {title.split(" ")[1]}
-                </MastheadH1>
-              </Grid>
-            </Grid>
-
-            <Typography
-              component="h2"
-              variant="h2"
-              align="center"
-              sx={{ color: "rgb(139, 139, 139)" }}
+        <Box textAlign="center">
+          <Grid container justifyContent="center" alignItems="center">
+            <Grid
+              item
+              sx={{
+                "@media (min-width: 992px)": { marginRight: "2rem" },
+              }}
             >
-              {subTitle}
-            </Typography>
-          </Box>
-        </Grid>
+              <MastheadH1 component="h1" variant="h1">
+                {title.split(" ")[0]}
+              </MastheadH1>
+            </Grid>
+            <Grid item>
+              <MastheadH1 component="h1" variant="h1">
+                {title.split(" ")[1]}
+              </MastheadH1>
+            </Grid>
+          </Grid>
+
+          <Typography
+            component="h2"
+            variant="h2"
+            sx={{ color: "rgb(139, 139, 139)" }}
+          >
+            {subTitle}
+          </Typography>
+          <ResumeDownload />
+        </Box>
       </Grid>
     </Masthead>
   );

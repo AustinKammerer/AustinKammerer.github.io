@@ -1,6 +1,5 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
@@ -43,8 +42,8 @@ export default function Portfolio(props) {
         </Grid>
         <Grid container spacing={2} justifyContent="center" mt={3}>
           {projects.map((project) => (
-            <Grid item>
-              <ProjectCard key={project.title} project={project} />
+            <Grid item key={project.title}>
+              <ProjectCard project={project} />
             </Grid>
           ))}
         </Grid>

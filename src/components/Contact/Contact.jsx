@@ -1,6 +1,7 @@
+import ResumeDownload from "../ResumeDownload/ResumeDownload";
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
@@ -68,7 +69,7 @@ export default function Contact(props) {
               {subtitle}
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid item textAlign="center">
             <Stack
               direction="row"
               flexWrap="wrap"
@@ -90,6 +91,7 @@ export default function Contact(props) {
                 <GitHubIcon sx={{ fontSize: "10rem" }} />
               </IconButton>
             </Stack>
+            <ResumeDownload />
           </Grid>
         </Grid>
         <Grid item>

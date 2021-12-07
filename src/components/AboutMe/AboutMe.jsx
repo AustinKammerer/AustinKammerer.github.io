@@ -14,14 +14,6 @@ const AboutSection = styled("section")(({ theme }) => ({
     "linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%)",
 }));
 
-const Headshot = styled("img")(({ theme }) => ({
-  verticalAlign: "middle",
-  width: "25%",
-  height: "25%",
-  borderRadius: "50%",
-  border: "2px solid rgb(139, 139, 139)",
-}));
-
 const Tech = styled(Chip)(({ theme }) => ({
   fontSize: "1.25rem",
   // padding: "0.5rem",
