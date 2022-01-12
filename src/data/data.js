@@ -58,8 +58,8 @@ export const portfolioData = {
       technologies:
         'React, Redux/Saga, Material UI, Express, Passport, Postgres, AWS S3, web API',
       image: parkScreen,
-      heroku: 'https://sheltered-retreat-52105.herokuapp.com/',
-      repo: 'https://github.com/AustinKammerer/solo-project',
+      heroku: 'https://parks-passport-prime.herokuapp.com/',
+      repo: 'https://github.com/AustinKammerer/parks-passport',
     },
     {
       title: 'My Movies',
